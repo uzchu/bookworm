@@ -10,3 +10,14 @@
   - 성별 및 작가정보 크롤링 : Yes24 (51186건)
 
   - 책소개 : Yes24
+  
+    
+
+- 목표
+  - 깃 협업
+
+
+
+- 참고자료
+  - https://blog.ull.im/engineering/2019/03/10/logs-on-git.html
+  - https://mylko72.gitbooks.io/git/content/branch/branch_type.html
