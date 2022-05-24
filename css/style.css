@@ -1,37 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Noto+Serif+KR&display=swap");
 
-#container {
+body {
   margin: 23px;
 }
-#header > p {
-  font-size: 13px;
+
+header {
+  margin: 54px 0 0;
 }
-#header > strong {
+
+header > p {
+  font-family: "Noto Sans KR";
+  font-size: 13px;
+  font-weight: 400;
+  color: #c1c1c1;
+}
+
+header > h2 {
+  display: inline;
+  font-family: "Noto Sans KR";
   font-size: 20px;
-  width: 200px;
+  font-weight: 900;
+  color: #3b3d49;
 }
 
-#header > span {
+header > span {
   float: right;
-  font-size: 13px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.8rem;
+  background-color: #fafafa;
 }
 
-#content > ul {
-  padding-left: 0px;
+ul {
+  padding: 0px;
 }
 
-#content > ul > li {
-  position: relative;
-  display: flex;
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 14px;
-
+ul > li {
+  list-style: none;
   font-family: "Noto Serif KR";
   font-size: 12px;
-  line-height: 17px;
+  padding: 20px;
+  margin: 14px 0;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
 }
 
 .clicked {
-  background-color: cornflowerblue;
+  background-color: #faffd1;
+}
+
+button {
+  margin: auto;
+  display: block;
+}
+
+.w-btn {
+  float: none;
+  width: max-content;
+  border: none;
+  padding: 15px 150px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid #3b3d49;
+  color: #000000;
+  font-weight: 700;
+}
+
+#jb-footer {
+  font-size: 12px;
+  text-align: center;
+  color: #c1c1c1;
 }

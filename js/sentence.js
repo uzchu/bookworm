@@ -73,14 +73,14 @@ const sentences = [
   { quote: "인간이란 극복되어야 할 무엇이다.", id: "16" },
 ];
 
-const sentenseList = document.querySelector("#sentence-list");
+const sentenseList = document.querySelector("ul");
 let num = 0;
 
 const CLICKED_CLASSNAME = "clicked";
 
 function countNum(event) {
-  const li = event.target.parentElement;
-  const cnt = document.querySelector("#header span");
+  const li = event.target;
+  const cnt = document.querySelector("header span");
   if (li.classList.contains(CLICKED_CLASSNAME)) {
     li.classList.remove(CLICKED_CLASSNAME);
     num--;
@@ -94,11 +94,9 @@ function countNum(event) {
 function sentenceMain(i) {
   const li = document.createElement("li");
   li.id = sentences[i].id;
-  const span = document.createElement("span");
-  span.innerText = sentences[i].quote;
-  li.addEventListener("click", countNum);
-  li.appendChild(span);
+  li.innerText = sentences[i].quote;
   sentenseList.appendChild(li);
+  li.addEventListener("click", countNum);
 }
 
 for (var i = 0; i < sentences.length; i++) {
